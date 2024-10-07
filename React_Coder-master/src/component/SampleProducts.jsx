@@ -52,8 +52,8 @@ const SampleProducts = () => {
         />
       </div>
 
-      <div className="py-12 m-auto flex flex-col items-center text-center">
-        <h1 className="animate-bounce px-3 mx-2 mb-4 w-auto font-semibold tracking-wider text-teal-900 uppercase rounded-md bg-teal-accent-400 text-4xl">
+      <div className="mt-10 py-12 m-auto flex flex-col items-center text-center">
+        <h1 className="animate-bounce px-3 mx-2 mb-4 w-auto font-semibold tracking-wider text-black uppercase rounded-md bg-teal-accent-400 text-4xl">
           Descrubre Nuestros Productos</h1>
         <h3 className="m-2 text-2xl">Elige tu comida del día - Gran variedad</h3>
         <p className="m-2 text-xl indent-8">Descubre nuestras deliciosas viandas caseras, preparadas con ingredientes frescos y de la mejor calidad. Tenemos opciones para todos los gustos, desde platos tradicionales hasta opciones saludables. ¡Elige el tuyo y disfruta!</p>

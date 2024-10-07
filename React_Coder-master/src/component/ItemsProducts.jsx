@@ -1,3 +1,4 @@
+
 const ProductsItems = ({title, price, description, subtitle, img}) =>{
     return(
         <div className="flex flex-col justify-between p-8 drop-shadow-lg transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
