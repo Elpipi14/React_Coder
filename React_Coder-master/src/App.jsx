@@ -2,7 +2,8 @@ import './App.css';
 import NavBar from './component/NavBar/NavBar';
 import ItemListContainer from './component/ItemListContainer';
 import Content from './component/Header';
-import Products  from './component/Products';
+import SampleProducts  from './component/SampleProducts';
+import Products from './component/Products';
 import Footer from './component/Footer';
 
 import Swal from 'sweetalert2';
@@ -30,6 +31,7 @@ function App() {
       <NavBar />
       <ItemListContainer name={name} />
       <Content />
+      <SampleProducts />
       <Products />
       <Footer />
     </>
