@@ -10,7 +10,7 @@ export const CartWidget = () => {
     
     return (
         <div className="relative">
-            <button onClick={toggleMenu} className="inline-flex items-center justify-center size-14 font-medium tracking-wide transition duration-200 rounded shadow-md transform hover:scale-105 sm:ml-5">
+            <button onClick={toggleMenu} className="inline-flex items-center justify-center size-14 font-medium tracking-wide transition duration-200 rounded shadow-md transform hover:scale-105 ">
                 <img src={cart} alt="Cart" width={50} />
             </button>
             <span

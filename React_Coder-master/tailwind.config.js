@@ -8,7 +8,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        'courier-prime': ['"Courier Prime"', 'monospace'],
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        
       },
       colors: {
         red: {

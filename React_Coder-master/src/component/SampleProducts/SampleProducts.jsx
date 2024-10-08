@@ -1,7 +1,7 @@
-import ProductsItems from "./ItemsProducts";
-import plato1 from '../assets/products/plato1.png';
-import plato2 from '../assets/products/plato2.png';
-import plato3 from '../assets/products/plato3.png';
+import ProductsItems from "./ItemsSample";
+import plato1 from '../../assets/products/plato1.png';
+import plato2 from '../../assets/products/plato2.png';
+import plato3 from '../../assets/products/plato3.png';
 
 const SampleProducts = () => {
   return (
