@@ -4,8 +4,6 @@ import ItemListContainer from './component/ItemListContainer';
 import Content from './component/Header';
 import SampleProducts  from './component/SampleProducts/SampleProducts';
 import Products from './component/Products/Products';
-import Register from './component/Users/RegisterUser';
-import SessionUser from './component/Users/SessionUser';
 import Footer from './component/Footer';
 
 import Swal from 'sweetalert2';
@@ -36,8 +34,6 @@ function App() {
       <Content />
       <SampleProducts />
       <Products />
-      <Register />
-      <SessionUser />
       <Footer />
     </>
   );

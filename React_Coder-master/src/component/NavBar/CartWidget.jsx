@@ -11,7 +11,7 @@ export const CartWidget = () => {
     return (
         <div className="relative">
             <button onClick={toggleMenu} className="inline-flex items-center justify-center size-14 font-medium tracking-wide transition duration-200 rounded shadow-md transform hover:scale-105 ">
-                <img src={cart} alt="Cart" width={50} />
+                <img src={cart} alt="Cart" width={40} />
             </button>
             <span
                 className="relative bottom-10 right-3 rounded-full bg-red-500 px-[0.45em] py-[0.15em] text-[1rem] font-bold leading-none text-black"

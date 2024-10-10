@@ -1,19 +1,23 @@
 import React from "react";
-import  logo  from "../../assets/logo/variete.svg"
+import logo from "../../assets/logo/variete.svg";
 
-const SessionUser = () => {
+const SessionUser = ({ onClose }) => {
   return (
-    <section className="bg-gray-1 py-20 dark:bg-dark lg:py-[120px]">
+    <section className="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto font-[sans-serif]">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full px-4">
             <div className="relative mx-auto max-w-[525px] overflow-hidden rounded-lg bg-white px-10 py-16 text-center dark:bg-dark-2 sm:px-12 md:px-[60px]">
+              <button
+                title="Close Menu"
+                className="absolute top-4 right-4 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                onClick={onClose}
+              >
+                X
+              </button>
               <div className="mb-10 text-center md:mb-16">
                 <a href="/#" className="mx-auto inline-block max-w-[160px]">
-                  <img
-                    src={logo}
-                    alt="logo"
-                  />
+                  <img src={logo} alt="logo" />
                 </a>
               </div>
               <form>
@@ -40,9 +44,20 @@ const SessionUser = () => {
                   type="submit"
                   className="border rounded-full  items-center justify-center py-3 px-7 text-center text-base font-medium text-black hover:bg-[#0BB489] hover:border-[#0BB489] mt-4"
                 >
-                  Registrarse
+                  Ingresar
                 </button>
               </form>
+              <div className="m-4">
+                <h3 className="text-gray-700 dark:text-gray-800 text-base">
+                  ¿No tenés cuenta?{" "}
+                  <a
+                    href="#"
+                    className="text-[#0BB489] font-bold hover:underline"
+                  >
+                    Registrate
+                  </a>
+                </h3>
+              </div>
             </div>
           </div>
         </div>

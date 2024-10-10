@@ -2,22 +2,28 @@ import { useState } from "react";
 import logo from '../../assets/logo/variete.svg';
 import { CartWidget } from "./CartWidget.jsx";
 import subLogo from '../../assets/logo/Lv.png';
+import users from '../../assets/logo/users.svg'
+
+import SessionUser from '../Users/SessionUser.jsx';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(prevState => !prevState);
 
+  const [session, setSession] = useState(false);
+  const toggleSession = () => setSession(true);
+
   return (
     <div className="bg-gray-900">
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
         <div className="relative flex  items-center grid-cols-2 lg:grid-cols-3">
-          <ul className="items-center mr-4 hidden space-x-8 lg:flex">
+          <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Sobre Nosotros
+               Nosotros
               </a>
             </li>
             <li>
@@ -49,20 +55,13 @@ const NavBar = () => {
           </a>
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/"
+              <button
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                onClick={toggleSession}
               >
-                Iniciar Sesion
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md hover:bg-custom-gree-2 transform hover:scale-105 focus:shadow-outline focus:outline-none"
-              >
-                Registrarse
-              </a>
+               <img src={users} alt="users" className="ml-4" width={40}/>
+              </button>
+              {session && <SessionUser onClose={() => setSession(false)} />}
             </li>
             <li>
             <CartWidget />
@@ -146,23 +145,16 @@ const NavBar = () => {
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        <button
+                          className="mb-4 font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          onClick={toggleSession}
                         >
                           Iniciar Sesion
-                        </a>
+                        </button>
+                        {session && <SessionUser onClose={() => setSession(false)} />}
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Registrarse
-                        </a>
-                      </li>
-                      <li>
-                      <CartWidget />
+                        <CartWidget />
                       </li>
                     </ul>
                   </nav>

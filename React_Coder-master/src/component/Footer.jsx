@@ -1,15 +1,12 @@
-import logo from '../assets/logo/piuweb.png';
-import lv from '../assets/logo/logo2.svg';
+import logo from "../assets/logo/piuweb.png";
+import lv from "../assets/logo/logo2.svg";
 
 const Footer = () => {
   return (
     <div className="px-4 pt-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 border-t">
       <div className="flex flex-col lg:flex-row justify-between items-center my-2">
         <div className="mx-8 sm:col-span-2">
-        <a
-            href="/"
-            className="inline-flex items-center lg:mx-auto"
-          >
+          <a href="/" className="inline-flex items-center lg:mx-auto">
             <img
               src={lv}
               alt="Logo"
@@ -97,13 +94,19 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center pt-5 pb-10 border-t">
-      <img
-              src={logo}
-              alt="Logo"
-              className="text-teal-accent-400 w-38 h-16 mb-4"
-            />
+        <img
+          src={logo}
+          alt="Logo"
+          className="text-teal-accent-400 w-38 h-16 mb-4"
+        />
         <p className="text-sm text-center text-gray-600">
           ©Copyright 2024 By Developer Ap. All rights reserved.
+        </p>
+        <p className="text-center">
+          <strong>Aviso:</strong> Este sitio web ha sido creado con fines
+          educativos como parte de un proyecto de curso. La información y los
+          productos aquí mostrados no son reales ni están disponibles para la
+          venta.
         </p>
       </div>
     </div>
