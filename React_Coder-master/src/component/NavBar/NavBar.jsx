@@ -59,7 +59,7 @@ const NavBar = () => {
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 onClick={toggleSession}
               >
-               <img src={users} alt="users" className="ml-4" width={40}/>
+               <img src={users} alt="users" className="ml-12" width={40}/>
               </button>
               {session && <SessionUser onClose={() => setSession(false)} />}
             </li>

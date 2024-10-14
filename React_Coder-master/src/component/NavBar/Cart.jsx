@@ -22,7 +22,7 @@ const Cart = ({stock}) =>{
         <div className="p-4 w-[250px] md:w-[350px] ">
             <div className="flex flex-col border-b mb-4">
                 <div>
-                <img src={vianda} alt="Vianda clasica" className="w-24 m-auto mb-4 object-cover object-center" />
+                <img src={vianda} alt="Vianda clasica" className="shadow-xl transition-shadow w-24 m-auto mb-4 object-cover object-center" />
                     <div className="flex justify-center text-base font-medium text-gray-900">
                         <h3>
                         <a href="#">Vianda Clasica</a>
@@ -54,13 +54,13 @@ const Cart = ({stock}) =>{
                 </div>
 
                 <div className="mt-6">
-                    <a href="#" className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                    <a href="#" className="flex items-center justify-center rounded-md border border-transparent bg-custom-gree-2 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
                         Finalizar Compra
                     </a>
                 </div>
 
                 <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
-                    <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
+                    <button type="button" className="font-medium text-custom-gree-2 hover:text-indigo-600">
                         Continuar Comprando
                     </button>
                 </div>

@@ -15,20 +15,22 @@ const SessionUser = ({ onClose }) => {
               >
                 X
               </button>
-              <div className="mb-10 text-center md:mb-16">
+              <div className="mb-4 text-center md:mb-8">
                 <a href="/#" className="mx-auto inline-block max-w-[160px]">
                   <img src={logo} alt="logo" />
                 </a>
+                <h1 className="mt-4">Iniciar Sesión</h1>
               </div>
+              
               <form>
                 {/* Email */}
-                <label className="mb-2 mt-4 text-base font-medium text-gray-700 dark:text-gray-300">
+                <label className="text-base font-medium text-gray-700 dark:text-gray-300">
                   Email
                 </label>
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
+                  className="w-full mb-4 bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
                 />
 
                 {/* Contraseña */}
@@ -52,7 +54,7 @@ const SessionUser = ({ onClose }) => {
                   ¿No tenés cuenta?{" "}
                   <a
                     href="#"
-                    className="text-[#0BB489] font-bold hover:underline"
+                    className="text-[#258778] font-bold hover:underline"
                   >
                     Registrate
                   </a>

@@ -4,7 +4,7 @@ import lunch2 from '../assets/local/lunch2.jpg'
 
 const Content = () => {
     return (
-      <div className="px-4 text-center py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 text-center pt-12 pb-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-custom-gree-2">
@@ -21,7 +21,6 @@ const Content = () => {
             <div>
               <a
                 href="/"
-                aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Sobre Nostros

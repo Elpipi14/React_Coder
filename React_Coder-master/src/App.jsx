@@ -1,6 +1,5 @@
 import './App.css';
 import NavBar from './component/NavBar/NavBar';
-import ItemListContainer from './component/ItemListContainer';
 import Content from './component/Header';
 import SampleProducts  from './component/SampleProducts/SampleProducts';
 import Products from './component/Products/Products';
@@ -30,7 +29,6 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer name={name} />
       <Content />
       <SampleProducts />
       <Products />
