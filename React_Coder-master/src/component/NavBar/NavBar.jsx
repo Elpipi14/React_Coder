@@ -50,10 +50,10 @@ const NavBar = () => {
             <img
               src={logo}
               alt="Logo"
-              className="text-teal-accent-400 w-38 h-16"
+              className="text-teal-accent-400 w-38 h-16 lg:relative lg:right-14"
             />
           </a>
-          <ul className="items-center hidden space-x-8 lg:flex">
+          <ul className="items-center hidden space-x-8 relative left-16 lg:flex">
             <li>
               <button
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"

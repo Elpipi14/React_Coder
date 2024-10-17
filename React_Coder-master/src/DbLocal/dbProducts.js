@@ -122,7 +122,7 @@ const products = [
   {
     "id": 13,
     "name": "Ensalada César con Pollo",
-    "description": "Ensalada César clásica con trozos de pollo grillado y aderezo César.",
+    "description": "Ensalada Cesar clasica con trozos de pollo grillado y aderezo Cesar.",
     "price": 300,
     "stock": 16,
     "image": "https://example.com/ensalada_cesar_pollo.jpg",

@@ -1,8 +1,15 @@
-const Item = ({product}) =>{
-    return(
-        <div
+// import Item from "./ItemProduct"
+
+const ItemListContainer = ({ products }) => {
+
+  
+  return (
+    <div className="mt-6 text-center grid grid-cols-1 px-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      {
+        products.map((product) => (
+           <div
         className="group relative flex flex-col justify-between h-full border rounded-lg shadow-md p-4"
-      >
+        key={product.id}>
         <h2 className="text-xl text-center mb-2 font-bold tracking-tight text-gray-900 min-h-[3rem]">
           {product.name}
         </h2>
@@ -29,7 +36,10 @@ const Item = ({product}) =>{
           Ver Producto
         </a>
       </div>
-    )
+      ))
+      }
+    </div>
+  );
 };
 
-export default Item;
+export default ItemListContainer;
