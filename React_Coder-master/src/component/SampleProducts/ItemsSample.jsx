@@ -19,16 +19,13 @@ const ProductsItems = ({title, price, description, subtitle, img}) =>{
           <div className="text-center mt-6">
             <a
               href="/comprar" // Link a la compra
-              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-green-500 rounded shadow-md hover:bg-green-600 focus:shadow-outline focus:outline-none"
+              className="inline-flex hover:underline items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-green-500 rounded shadow-md hover:bg-green-600 focus:shadow-outline focus:outline-none"
             >
-              Comprar ahora
+              Ver más productos
             </a>
             <p className="mt-6 text-xs text-gray-600">
                 {subtitle}
             </p>
-            <a href="/productos" className="text-blue-500 hover:underline mt-2 block">
-              Ver más productos
-            </a>
           </div>
         </div>
     )

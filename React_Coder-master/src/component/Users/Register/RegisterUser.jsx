@@ -14,15 +14,15 @@ const Register = () => {
       <h2 className="text-center mb-6 text-lg text-black">
         Completa los datos para crear una cuenta, ¡Gracias!
       </h2>
-      <form className="flex flex-col items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md">
+      <form className="flex flex-col items-center bg-white  p-6 rounded-lg shadow-md w-full max-w-md">
         {/* Nombre */}
-        <label className="mb-2 text-base font-medium text-gray-700 dark:text-gray-300">
+        <label className="mb-2 text-base font-medium text-gray-700 ">
           Nombre
         </label>
         <input
           type="text"
           placeholder="Nombre"
-          className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
+          className="w-full bg-transparent text-center rounded-md border border-gray-300  focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
         />
 
         {/* Apellido */}
@@ -32,7 +32,7 @@ const Register = () => {
         <input
           type="text"
           placeholder="Apellido"
-          className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
+          className="w-full bg-transparent text-center rounded-md border border-gray-300  py-3 px-5 text-gray-800  focus:border-blue-500 focus:ring focus:ring-blue-200  transition"
         />
 
         {/* Email */}
@@ -42,7 +42,7 @@ const Register = () => {
         <input
           type="email"
           placeholder="Email"
-          className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
+          className="w-full bg-transparent text-center rounded-md border border-gray-300  py-3 px-5 text-gray-800  focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
         />
 
         {/* Contraseña */}
@@ -52,16 +52,16 @@ const Register = () => {
         <input
           type="password"
           placeholder="Contraseña"
-          className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
+          className="w-full bg-transparent text-center rounded-md border border-gray-300  py-3 px-5 text-gray-800  focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
         />
 
-        <label className="mb-2 mt-4 text-base font-medium text-gray-700 dark:text-gray-300">
+        <label className="mb-2 mt-4 text-base font-medium text-gray-700 ">
           Repita Contraseña
         </label>
         <input
           type="password"
           placeholder="Contraseña"
-          className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
+          className="w-full bg-transparent text-center rounded-md border border-gray-300 py-3 px-5 text-gray-800 focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
         />
 
         <div className="flex items-center mt-4">
