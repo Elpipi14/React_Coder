@@ -29,7 +29,6 @@ const SessionUser = ({ onClose }) => {
                 </label>
                 <input
                   type="email"
-                  placeholder="Email"
                   className="w-full mb-4 bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
                 />
 
@@ -39,7 +38,6 @@ const SessionUser = ({ onClose }) => {
                 </label>
                 <input
                   type="password"
-                  placeholder="Contraseña"
                   className="w-full bg-transparent text-center rounded-md border border-gray-300 dark:border-gray-600 py-3 px-5 text-gray-800 dark:text-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 dark:focus:ring-blue-500 transition"
                 />
                 <button

@@ -3,8 +3,7 @@ import { useProducts } from "../Hooks/useProducts";
 import Spinner from "../component/Spinner/Spinner";
 
 const FilterHocProducts = (Component) => {
-  return function WrappedComponentWithFilter(props) {
-
+  return function () {
     const { products, spinners } = useProducts();
     const [query, setQuery] = useState(""); 
 
@@ -50,16 +49,44 @@ const FilterHocProducts = (Component) => {
                 />
               </svg>
             </div>
+            <label htmlFor="text" className="sr-only">Buscar productos</label>
             <input
               type="text"
               id="text"
-              className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
               placeholder="Buscar productos..."
-              required
               onChange={changeInput}
             />
           </div>
+          <div className="flex mt-8 w-48 text-sm font-medium text-gray-900 bg-white ">
+          <button
+            aria-current="true"
+            type="button"
+            className="w-full px-4 py-2 font-medium text-center text-white bg-custom-gree-2 border-2 border-gray-800 rounded-t-lg cursor-pointer focus:outline-none"
+          >
+            Categorias
+          </button>
+          <button
+            type="button"
+            className="w-full px-4 mx-4 py-2 font-medium text-center border-y-2 border-gray-800 cursor-pointer hover:bg-gray-800 hover:text-green-300 focus:outline-none focus:ring-2 focus:text-green-500"
+          >
+            Carnes
+          </button>
+          <button
+            type="button"
+            className="w-full px-4 mx-4 py-2 font-medium text-center border-y-2 border-gray-800 cursor-pointer hover:bg-gray-800 hover:text-green-300 focus:outline-none focus:ring-2 focus:text-green-500"
+          >
+            Vegetarianas
+          </button>
+          <button
+            type="button"
+            className="w-full px-4 mx-4 py-2 font-medium text-center border-y-2 border-gray-800 cursor-pointer hover:bg-gray-800 hover:text-green-300 focus:outline-none focus:ring-2 focus:text-green-500"
+          >
+            Pastas
+          </button>
         </div>
+        </div>
+        
       <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
         {spinners === true ? (<Spinner />) : (<Component products={search()} />)}
       </div>

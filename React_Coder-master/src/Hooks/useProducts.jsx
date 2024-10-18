@@ -3,15 +3,15 @@ import { getProducts } from "../DbLocal/dbProducts";
 
 export const useProducts = () =>{
     const [products, setProducts] = useState([]);
-    const [spinners, setsPinners ] = useState(true)
+    const [spinners, setSpinners ] = useState(true)
 
     useEffect(()=>{
-        setsPinners(true)
+        setSpinners(true)
 
         getProducts()
             .then((data)=> setProducts(data))
             .catch((error)=> console.error(error))
-            .finally(()=> setsPinners(false))
+            .finally(()=> setSpinners(false))
     }, [])
 
     return { products, spinners }
